@@ -103,6 +103,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# 指定静态文件所在的物理目录
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
 
 #
 CACHES = {
