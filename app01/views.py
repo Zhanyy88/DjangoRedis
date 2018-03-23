@@ -17,6 +17,7 @@ def index(request):
     # text = 'aa=%s   bb=%s'%(aa.decode(),bb)
 
 
+
     return render(request,'index.html')
 
 

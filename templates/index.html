@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <script src="static/js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(function () {
+           var $add = $('#add');
+           var $del = $('#del');
+           $add.click(function () {
+
+
+           })
+
+
+        })
+
+
+    </script>
 
 </head>
 <body>
 <h3>{{ total  }}</h3>
-<input type="text" id="user" value="{{ total }}">
-<input type="button" id="good_1" value="加">
-<input type="button" id="good_1" value="减">
+<input type="text" id="user" value="{{total}}" style="width: 20px ;text-align: center" placeholder="0"> <br>
+<input type="button" id="add" value="加">
+<input type="text" id="num" value="{{ num }}"  placeholder="0" style="width: 20px;text-align: center">
+<input type="button" id="del" value="减">
 
 </body>
 </html>
